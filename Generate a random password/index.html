@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate a Random Password</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Happy+Monkey&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Toggle button div -->
+  <div id="toggle-button-div">
+    <label class="toggle">
+      <input type="checkbox" id="btnToggle" name="btnToggle" />
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <!-- Header text -->
+  <div id="main-text">
+    <div class="inline-container">
+       <h1 class="header">Generate a <br><span id="green-text">random password</span></h1>
+       <p>Never use an insecure password again.</p>
+    </div>
+  </div>
+
+  <!-- Password div -->
+  <div id="password-div">
+    <h2 class="white">Password Length:</h2>
+    <div class="slider-container">
+      <span id="pass-len" class="white">8</span>
+      <label for="pass-length">
+      <input type="range" id="pass-length" name="pass-length" min="8" max="20" value="8" class="range-slider">
+    </label>
+    </div>
+  </div>
+
+
+  <!-- Characters div -->
+  <div id="characters-div">
+  <h2 class="white">Characters Used:</h2>
+  <div class="white" id="labels-input">
+    
+    <label for="uppercase" class="characters-container">
+      <input type="checkbox" id="uppercase" name="uppercase" class="chkbox"> 
+      <span class="custom-check"></span>
+      Uppercase
+    </label>
+
+    <label for="lowercase" class="characters-container">
+      <input type="checkbox" id="lowercase" name="lowercase" class="chkbox"> 
+      <span class="custom-check"></span>
+      Lowercase
+    </label>
+
+    <label for="numbers" class="characters-container">
+      <input type="checkbox" id="numbers" name="numbers" class="chkbox">
+      <span class="custom-check"></span>
+      Numbers
+    </label>
+ 
+    <label for="symbols" class="characters-container">
+      <input type="checkbox" id="symbols" name="symbols" class="chkbox">
+      <span class="custom-check"></span>
+      Symbols
+    </label>
+
+    </div>
+  </div>
+
+  <!-- Buttons Div -->
+  <div id="buttons-div">
+    <button id="gen-pass-btn">Generate passwords</button>
+  </div>
+
+  <!-- Generated passwords div -->
+  <div id="passwords-generated">
+    <div id="password1" class="passwords">
+      <span id="pass-1" class="pass-style"></span>
+      <span class="open-eye"><img src="images/openeye.png" alt="open eye icon" class="openeye-img" id="open-eye-img1"></span>
+    </div>
+    <div id="password2" class="passwords">
+      <span id="pass-2" class="pass-style"></span>
+      <span class="open-eye"><img src="images/openeye.png" alt="open eye icon" class="openeye-img" id="open-eye-img2"></span>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

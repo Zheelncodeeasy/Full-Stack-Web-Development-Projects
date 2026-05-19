@@ -1,0 +1,285 @@
+body{
+  margin:0;
+  background:#F5F3F4;
+  font-family : "inter";
+  transition:0.5s;
+  /* text-align:center; */
+}
+
+.inline-container{
+  display:inline-block;
+  text-align:left;
+}
+h1{
+  font-size: 36px;
+  margin:0;
+  font-weight:800;
+}
+
+p{
+  color:#2B2B2B;
+  font-size:22px;
+  margin-top:5px;
+}
+#main-text{
+  color:#050505;
+  margin-top:20px;
+  text-align:center;
+}
+
+#green-text{
+  color:rgba(28, 213, 127, 0.9);
+}
+
+.white{
+  color:black;
+  font-weight:bold;
+}
+
+#password-div{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:50px;
+  margin-top:52px;
+}
+
+.range-slider{
+  /* flex-grow:1;
+  width:432px;
+  margin:0;
+  accent-color:black;
+  opacity:20%; */
+  appearance:none;
+  width:455px;
+  height:5px;
+  background:#D9D9D9;
+  border-radius:10px;
+  accent-color:rgba(0,0,0,0.9);
+  cursor:pointer;
+}
+
+.range-slider::-webkit-slider-thumb{
+  appearance: none;
+  width: 24px;     /* bigger width */
+  height: 24px;    /* bigger height */
+  border-radius: 50%;
+  background:rgba(28, 213, 127, 1);
+  cursor: pointer;
+}
+
+.slider-container{
+  position:relative;
+  width:455px;
+}
+
+#pass-len{
+  /* display: inline-block;
+  margin-left: -40px; */
+  position:absolute;
+  top:-26px;
+  left:2px;
+  transform:translateX(-50%);
+  font-size:16px;
+  transition: 0.1s;
+}
+
+
+#characters-div{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:20px;
+  gap:49px;
+
+}
+
+h2{
+  font-size:20px;
+}
+
+#buttons-div{
+  text-align:center;
+}
+
+button{
+  margin-top:50px;
+  font-size:18px;
+  color:black;
+  font-weight:bold;
+  background:rgba(28, 213, 127, 0.9);
+  padding:8px 25px;
+  border-radius : 10px;
+  border:none;
+  cursor:pointer;
+}
+
+#passwords-generated{
+  margin-top:70px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:50px;
+}
+
+.passwords{
+  width:320px;
+  height:40px;
+  background:#D9D9D9;
+  border-radius:10px;
+
+  display:flex;
+  align-items:center;
+}
+
+
+.pass-style{
+  font-size:17px;
+  margin-left:10px;
+}
+
+.open-eye{
+  margin-left:auto;
+  padding:5px 10px 0 0;
+}
+
+.openeye-img{
+  width:20px;
+  height:20px;
+}
+
+.characters-container input{
+  display:none;
+}
+
+.characters-container{
+  margin-left:8px;
+  font-weight:400;
+  margin-left:13px;
+}
+
+.custom-check{
+  width:18px;
+  height:18px;
+  border:none;
+  display:inline-block;
+  border-radius:2px;
+  position:relative;
+  cursor:pointer;
+  background:#D9D9D9;
+  margin-right:4px;
+}
+
+.characters-container input:checked + .custom-check{
+  background: #D9D9D9;
+  border-color: none;
+}
+
+.characters-container input:checked + .custom-check::after{
+  content: "✔";
+  color: black;
+  position: absolute;
+  left: 4px;
+  top: -2px;
+}
+
+
+
+#toggle-button-div{
+  text-align:right;
+  margin:15px 20px 0 0;
+}
+
+
+
+.toggle{
+  position: relative;
+  display:inline-block;
+  width:65px;
+  height:31px;
+}
+
+.toggle input {
+  display: none;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00FF88;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 3px;
+  bottom: 2px;
+  background-color:#F5F3F4;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+
+input:checked + .slider:before {
+  background-color: #2C2B2B;
+}
+
+input:checked + .slider:before {
+  transform: translateX(35px);
+}
+
+
+
+
+/* dark mode */
+body.dark-mode{
+  background:#222222;
+  font-family:"inter";
+  transition:0.5s;
+}
+
+body.dark-mode .white{
+  color:white;
+}
+
+body.dark-mode .header{
+  color:white;
+}
+
+body.dark-mode .passwords{
+  background:#2C2B2B;
+}
+
+body.dark-mode p{
+  color:#BDB2B2;
+}
+
+body.dark-mode button{
+  color:white;
+}
+
+body.dark-mode .range-slider{
+  background:#FFFFFF;
+  border-radius:10px;
+  accent-color:#D9D9D9; 
+}
+
+body.dark-mode .pass-style{
+  color:white;
+}
+
+body.dark-mode .openeye-img{
+  filter: brightness(0) invert(1);
+}
+
+
